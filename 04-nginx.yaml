@@ -1,7 +1,8 @@
 - name: nginx install and run
   hosts: web
-  tasks: 
   become: yes
+  tasks:  
+
   - name: install nginx
     ansible.builtin.package: #if we use dnf means package other servers like ubuntu centose....called hetergenous
      name: nginx
