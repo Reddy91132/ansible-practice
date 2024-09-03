@@ -1,6 +1,6 @@
 - name: variables to print
   hosts: web
-  var: 
+  vars: 
   course: devops with AWS
   duration: 120 hours
   trainer: sivakumar reddy
