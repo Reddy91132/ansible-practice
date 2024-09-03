@@ -1,0 +1,8 @@
+- name: ngnix
+  hosts: web
+  tasks: 
+  become: yes
+  - name: install nginx
+    ansible.builtin.package: #if we use dnf means package other servers like ubuntu centose....called hetergenous
+    name: nginx
+    state: present 
