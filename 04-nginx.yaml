@@ -1,4 +1,4 @@
-- name: ngnix
+- name: ngnix install and run
   hosts: web
   tasks: 
   become: yes
