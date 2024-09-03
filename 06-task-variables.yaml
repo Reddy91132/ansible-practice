@@ -5,11 +5,11 @@
    duration: 120 hours
    trainer: sivakumar reddy
   tasks: 
-  - name: print the information
+   - name: print the information
     ansible.builtin.debug:
       msg: "hi,iam learning {{course}},duration is : {{duration}},trainer is : {{trainer}}"
 
- - name: print the information and again
+  - name: print the information and again
     var:
      course: "ansible"
       ansible.builtin.debug:
