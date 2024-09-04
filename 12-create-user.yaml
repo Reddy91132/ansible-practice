@@ -1,5 +1,5 @@
 - name: create user
-  hosts: 172.31.36.199
+  hosts: web
   become: yes
   tasks: 
   - name: check user exist or not
