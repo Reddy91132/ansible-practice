@@ -7,10 +7,10 @@
     register: user #here user is a variable that gets output from above command
     ignore_errors: true
 
-    - name: print the user information
-      ansible.builtin.debug:
-       msg: "user info: {{user}}"
+  - name: print the user information
+    ansible.builtin.debug:
+      msg: "user info: {{user}}"
 
-    - name: create user
-      ansible builtin.command: useradd expense
-      when: user.rc !=0 
+  - name: create user
+    ansible builtin.command: useradd expense
+    when: user.rc !=0 
