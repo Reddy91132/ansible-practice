@@ -3,13 +3,14 @@
   become: yes
   tasks: 
 
- - name: print the names
-  ansible.builtin.package:
-   msg: "{{ items }}"
-   state: present
-  loop: 
+  - name: print the names
+    ansible.builtin.package:
+    msg: "{{ items }}"
+    state: present
+    
+    loop: 
 
-  - mysql
-  - nginx
-  - postfix
-  - httpd 
+    - mysql
+    - nginx
+    - postfix
+    - httpd 
