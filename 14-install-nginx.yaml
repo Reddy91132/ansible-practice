@@ -16,5 +16,5 @@
     ansible.builtin.apt:
      name: nginx
      state: present
-     when: ansible_os_family == "debian"   
+    when: ansible_os_family == "debian"   
 
