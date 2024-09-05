@@ -1,13 +1,12 @@
 - name: loops demo
   hosts: web
   become: yes
-  tasks: 
-
+  tasks:
   - name: print the names
     ansible.builtin.package:
-    msg: "{{ items }}"
-    state: present
-    
+     msg: "{{ items }}"
+      state: present
+
     loop: 
 
     - mysql
