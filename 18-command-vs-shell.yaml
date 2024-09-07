@@ -10,5 +10,5 @@
      register: output
 
   - name: check the process 
-    ansible.bulitin.command: ps -ef | grep ssh 
+    ansible.builtinS.command: ps -ef | grep ssh 
      register: output
