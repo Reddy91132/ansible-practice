@@ -43,7 +43,7 @@
     vars:
       course:
       - { " key": "name","valve","Devops with Aws" }
-      - { "key": "duration","valve": 120 }
+      - { "key": "duration","valve" : 120 }
       - { "key": "tariner","valve": "sivakumar reddy" }
     ansible.builtin.debug:
      msg: "{{ course | items2dict }}"  
