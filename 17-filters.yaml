@@ -46,4 +46,4 @@
       - { "key": "duration","valve": 120 }
       - { "key": "tariner","valve": "sivakumar reddy" }
     ansible.builtin.debug:
-     msg: "{{ course | items2dic }}"    
+     msg: "{{ course | items2dict }}"  
