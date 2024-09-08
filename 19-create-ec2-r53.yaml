@@ -30,9 +30,9 @@
       state: present
       zone: "{{ zone }}"
       record: "{{ item.item }}.{{ zone }}"
-      type:
+      type: A
       tt1: 1
-      valve: "{{ item.instance[0] .private_ip_address }}"
+      valve: "{{ item.instance[0].private_ip_address }}"
       wait: true
       overwrite: true
 
