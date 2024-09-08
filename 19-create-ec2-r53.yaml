@@ -10,7 +10,13 @@
     - backend
     - frontend
     zone: reddy81s.online
-  tasks: 
+  tasks:
+  - name: ansible to install botocore and boto3
+    ansible.builtin.pip:
+      name:
+      - botocore
+      - boto3
+      executable: pipe3.9 
   - name: create ec2 instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
