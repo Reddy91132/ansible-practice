@@ -5,7 +5,6 @@
     subnet_id: subnet-0ca3d274d4b2839c6
     sg_id: "sg-0c12ebdb3af1cd102"
     ami_id: "ami-09c813fb71547fc4f"
-    wantlist: true
     instances:
     - mysql
     - backend
